@@ -4,9 +4,8 @@ User  klaviatura orqali "Yes" yoki "No" deb kiritishiga qarab o'yin davom ettiri
 2. Userga maximum 5 martagacha sonlarni guess qilishga imkon berilsin. 
 Agar 5 martada topa olmasa "Siz yutqazdingiz!"  degan xabar chiqsin. 
 
-PS: User yutsa ham yutqazsa ham "Yana o'ynaysizmi?" deb so'rash kerak.
-Agar 5 martada topa olmasa "Siz yutqazdingiz! 
-To'g'ri javob {answer}”  degan xabar chiqsin.
+User yutsa ham yutqazsa ham "Yana o'ynaysizmi?" deb so'ralishi kerak.
+Agar 5 martada topa olmasa "Siz yutqazdingiz deb to'g'ri javobni chiqarsin.
 
 """
 from random import randint
@@ -43,7 +42,8 @@ while control == True:
         again = input("\nWould you like to play again?('yes' to play or 'no' to exit):")
         if again != "yes":
             break
-print("Thank you!")
+        
+        print("Thank you!")
        
 
        
