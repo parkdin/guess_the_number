@@ -41,14 +41,9 @@ while control == True:
                 main = False   
         
         again = input("\nWould you like to play again?('yes' to play or 'no' to exit):")
-        if again.lower() == "yes":
-            control = True
-            main = True
-
-        elif again.lower() == "no":
-            control = False
-            main = False
-            print ("Thank you!")    
+        if again != "yes":
+            break
+print("Thank you!")
        
 
        
